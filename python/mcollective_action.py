@@ -33,7 +33,7 @@ class MCollectiveAction(object):
 
     def __init__(self):
         self._info  = sys.__stdout__
-        self._error = sys.__stderr__ 
+        self._error = sys.__stderr__
 
         for entry in '_reply', '_request':
             self.__dict__[entry] = {}
@@ -51,7 +51,7 @@ class MCollectiveAction(object):
         self._request_file, self._reply_file = self._arguments
 
         if len(self._request_file) == 0 or len(self._reply_file) == 0:
-            raise MissingFiles("Both request and reply files have to be set.")
+            raise MissingFiles('Both request and reply files have to be set.')
 
     def __setattr__(self, name, value):
         if name.startswith('_'):

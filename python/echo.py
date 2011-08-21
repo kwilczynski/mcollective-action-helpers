@@ -9,7 +9,7 @@ if __name__ == '__main__':
     request = mc.request()
     mc.message = request['data']['message']
     mc.time = time.strftime('%c')
-    mc.info("An example echo agent")
+    mc.info('An example echo agent')
 
     sys.exit(0)
 
